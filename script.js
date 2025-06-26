@@ -40,6 +40,7 @@
       image.src = img.url;
       image.dataset.class = img.class;
       image.dataset.index = index;
+	  image.classList.add(img.class);	
       image.style.cursor = "pointer";
 
       image.addEventListener("click", () => handleClick(image));
